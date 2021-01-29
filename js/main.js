@@ -3,8 +3,8 @@
 document.querySelector('button').addEventListener('click', getPicture)
 
 function getPicture() {
-    const inputVal = document.querySelector('input').value
-    const url = 'https://api.nasa.gov/planetary/apod?api_key=iGFKXujRNK1iFRGCGsz9XudMSUGs8gBWzxQYZA0N' + inputVal
+    let date = document.querySelector('input').value
+    const url = 'https://api.nasa.gov/planetary/apod?api_key=iGFKXujRNK1iFRGCGsz9XudMSUGs8gBWzxQYZA0N' + date
 
 
     fetch(url)
